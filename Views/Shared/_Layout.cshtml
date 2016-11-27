@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Roadster Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="~/Content/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <link href="~/Content/css/style.css" rel='stylesheet' type='text/css' />
+    <script src="~/Scripts/jquery.min.js"> </script>
+    <!--webfonts-->
+    <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
+    <!--//webfonts-->
+    <script type="text/javascript" src="~/Scripts/move-top.js"></script>
+    <script type="text/javascript" src="~/Scripts/easing.js"></script>
+</head>
+<body>
+    <div id="home" class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1><span>M</span>oretaxi</h1>
+                    </a>
+                </div>
+                <div class="h-right">
+                    <div class="working-hours">
+                        <div class="working-hours-label">
+                            WORKING HOURS
+                        </div>
+                        <div class="working-hours-time">
+                            <span>9AM - 8PM </span>
+                        </div>
+                        <div class="working-hours-date">
+                            SU, SAT 9AM - 6PM
+                        </div>
+                    </div>
+                    <div class="working-hours phone-number">
+                        <div class="icon-phone-1 phone-ico"><i class="glyphicon glyphicon-earphone"></i></div>
+                        <div class="phone-text">
+                            <div class="phone-number-label">
+                                CALL US
+                            </div>
+                            <div class="phone-number-number">
+                                224 5577 800
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="quate">
+                    <a href="#" class="hvr-bounce-to-bottom m1">Get a Quote</a>
+                </div>
+                <span class="menu"></span>
+                <div class="top-menu">
+
+                    <ul class="cl-effect-16">
+                        <li><a class="active" href="/Index" data-hover="HOME">Home</a></li>
+                        <li><a href="/About" data-hover="About">About</a></li>
+                        <li><a href="#" data-hover="SERVICES">SERVICES</a></li>
+                        <li><a href="#">CARS</a></li>
+                        <li><a href="#" class="scroll" data-hover="NEWS">NEWS</a></li>
+                        <li><a href="/Contact" data-hover="CONTACT">Contact</a></li>
+                    </ul>
+                </div>
+                <!--script-for-menu-->
+                <script>
+                    $("span.menu").click(function () {
+                        $(".top-menu").slideToggle("slow", function () {
+                            // Animation complete.
+                        });
+                    });
+                </script>
+                <!-- start-search-->
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    @RenderBody()
+</body>
+</html>
